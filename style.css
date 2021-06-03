@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Roboto;
+}
+
+/* header */
+header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.header-left img {
+    object-fit: contain;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.header-middle {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    flex: 0.7
+}
+
+.header-middle input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}
+
+.header-right {
+    padding-right: 20px;
+}
+
+header span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.material-icons {
+    color: gray;
+}
+
+
+
+/* menu */
+main {
+    display: flex;
+    height: 100vh;
+}
+
+/* sidebar */
+
+.sidebar {
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.compose span {
+    padding-right: 5px;
+}
+
+.compose {
+    margin: 15px 10px 15px 0;
+    border-radius: 30px;
+    text-transform: capitalize;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.option-container span {
+    margin-right: 5px;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: rgb(80, 79, 79);
+}
+
+.option-container span {
+    padding: 5px;
+}
+
+.option-container h3 {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.option-container:hover,
+.option-container:hover h3, 
+.option-container:hover span {
+    background-color: rgb(255, 232, 232);
+    color: rgb(253, 51, 51);
+    font-weight: 800;
+}
+
+.sidebar-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-footer span{
+    cursor: pointer;
+    /* margin: 7px; */
+    padding: 7px;
+}
+
+/* mail list */
+
+.mail-list {
+    flex: 1;
+    overflow: scroll;
+}
+
+.settings {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 8px;
+    border-bottom: 1px solid gray;
+    z-index: 999;
+}
+
+/* .settings-left {
+    display: flex;
+    align-items: center;
+}
+.settings-right {
+    display: flex;
+    align-items: center;
+} */
+
+.settings span{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.mail-type {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    z-index: 999;
+
+}
+
+.mail-type-container span{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.mail-type-container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: gray;
+    border-width: 0;
+    border-bottom-width: 2px;
+}
+
+.mail-type-container.selected {
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.mail-type-container.selected span {
+    color: red;
+}
+
+.mail-type-container:hover {
+    background-color: whitesmoke;
+    border-bottom-width: 3px;
+    border-bottom: 3px solid green;
+}
+
+.mail-type-container h4 {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+
+/* mails */
+
+.mail-row-options {
+    display: flex;
+    align-items: center;
+}
+
+.mail-row-options span, input {
+    margin: 5px;
+}
+
+.mail-row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.mail-row:hover {
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+
+.mail-row-message {
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 16px;
+}
+
+.mail-row-message h4{
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: lighter;
+}
+
+.mail-row-title {
+    font-size: 16px;
+    flex: 0.3;
+}
+
+.mail-row-time {
+    padding-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
