@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="icon" type="image/png" href="resources/icons/profile.jpg"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Mera Mail</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="icon">
+                <span class="material-icons">menu</span>
+            </div>
+            <img src="resources/gmail icon.png" alt="Gmail">
+        </div>
+        <div class="header-middle">
+            <span class="material-icons">search</span>
+            <input type="text" placeholder="Search">
+            <span class="material-icons">arrow_drop_down</span>
+        </div>
+        <div class="header-right">
+            <span class="material-icons">apps</span>
+            <span class="material-icons">notifications</span>
+            <span class="material-icons">account_circle</span>
+        </div>
+    </header>
+
+    <!-- main -->
+
+    <main>
+        <div class="sidebar">
+            <button class="compose">
+                <span class="material-icons">add</span>
+                Compose
+            </button>
+
+            <div class="options">
+                <div class="option-container">
+                    <span class="material-icons">inbox</span>
+                    <h3>Inbox</h3>
+                </div>
+                <div class="option-container">
+                    <span class="material-icons">star</span>
+                    <h3>Starred</h3>
+                    </div>
+                <div class="option-container">
+                    <span class="material-icons">access_time</span>
+                    <h3>Snoozed</h3>
+                </div>
+                <div class="option-container">
+                    <span class="material-icons">label_important</span>
+                    <h3>Important</h3>
+                </div>
+                <div class="option-container">
+                    <span class="material-icons">near_me</span>
+                    <h3>Sent</h3>
+                </div>
+                <div class="option-container">
+                    <span class="material-icons">note</span>
+                    <h3>Drafts</h3>
+                </div>
+                <div class="option-container">
+                    <span class="material-icons">expand_more</span>
+                    <h3>More</h3>
+                </div>
+
+                <div class="sidebar-footer">
+                    <div class="sidebar-footer-icons">
+                        <span class="material-icons">person</span>
+                        <span class="material-icons">duo</span>
+                        <span class="material-icons">phone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mail list -->
+        <div class="mail-list">
+            <!-- settings -->
+            <div class="settings">
+                <div class="settings-left">
+                    <input type="checkbox" name="" id="">
+                    <span class="material-icons">arrow_drop_down</span>
+                    <span class="material-icons">redo</span>
+                    <span class="material-icons">more_vert</span>
+                </div>
+                <div class="settings-right">
+                    <span class="material-icons">chevron_left</span>
+                    <span class="material-icons">chevron_right</span>
+                    <span class="material-icons">keyboard_hide</span>
+                    <span class="material-icons">settings</span>
+                </div>
+            </div>
+
+            <!-- mail types -->
+            <div class="mail-type">
+                <div class="mail-type-container selected">
+                    <span class="material-icons">inbox</span>
+                    Primary
+                </div>
+                <div class="mail-type-container">
+                    <span class="material-icons">people</span>
+                    Social
+                </div>
+                <div class="mail-type-container">
+                    <span class="material-icons">local_offer</span>
+                    Promotions
+                </div>
+            </div>
+
+            <!-- mails -->
+            <div class="mails">
+                <div class="mail-row">
+                    <div class="mail-row-options">
+                        <input type="checkbox" name="" id="">
+                        <span class="material-icons">star_border</span>
+                        <span class="material-icons">label_important</span>
+                    </div>
+
+                    <h3 class="mail-row-title">Apka apna mail</h3>
+                    <div class="mail-row-message">
+                        <h4>This is what a message looks like</h4>
+                    </div>
+                    <p class="mail-row-time">5:35 PM</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
