@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <link rel="icon" type="image/png" href="resources/icons/profile.jpg"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js" type="text/javascript" defer></script>
+
+    <!-- smtp -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -106,15 +108,15 @@
 
             <!-- mail types -->
             <div class="mail-type">
-                <div class="mail-type-container selected">
+                <div class="mail-type-container c1">
                     <span class="material-icons">inbox</span>
                     Primary
                 </div>
-                <div class="mail-type-container">
+                <div class="mail-type-container c2">
                     <span class="material-icons">people</span>
                     Social
                 </div>
-                <div class="mail-type-container">
+                <div class="mail-type-container c3">
                     <span class="material-icons">local_offer</span>
                     Promotions
                 </div>
@@ -136,7 +138,59 @@
                     <p class="mail-row-time">5:35 PM</p>
                 </div>
             </div>
+
+            <div class="mails">
+                <div class="mail-row">
+                    <div class="mail-row-options">
+                        <input type="checkbox" name="" id="">
+                        <span class="material-icons">star_border</span>
+                        <span class="material-icons">label_important</span>
+                    </div>
+
+                    <h3 class="mail-row-title">Apka apna mail</h3>
+                    <div class="mail-row-message">
+                        <h4>This is what a message looks like</h4>
+                    </div>
+                    <p class="mail-row-time">5:35 PM</p>
+                </div>
+            </div>
+
+
+            <div class="send-mail">
+                <div class="send-mail-bar">
+                    <div class="send-mail-bar-left">
+                        New Message
+                    </div>
+                    <div class="send-mail-bar-right">
+                        <span class="material-icons">minimize</span>
+                        <span class="material-icons">open_in_full</span>
+                        <span class="material-icons">close</span>
+                    </div>
+                </div>
+                <form method="post" enctype="text/plain">
+                    <input type="text" placeholder="Recipients" name="to"><br>
+                    <input type="text" placeholder="Subject" name="sub"><br>
+                    <input type="text" placeholder="Body" size="50" name="body"><br>
+                    <br>
+                    <div class="form-footer">
+                        <div class="form-footer-left">
+                            <input class="form-send" type="button" value="Send Email" onclick="sendEmail()"/>
+                            <span class="material-icons">format_underlined</span>
+                            <span class="material-icons">link</span>
+                            <span class="material-icons">mood</span>
+                            <span class="material-icons">drive_folder_upload</span>
+                        </div>
+                        <div class="form-footer-right">
+                            <span class="material-icons">delete</span>
+                            <span class="material-icons">more_vert</span>
+                        </div> 
+                    </div>
+                </form>
+            </div>
+
+
         </div>
     </main>
+    
 </body>
 </html>
