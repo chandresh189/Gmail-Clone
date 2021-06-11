@@ -202,21 +202,47 @@ main {
     border-bottom-width: 2px;
 }
 
-.mail-type-container.selected {
+.mail-type-container.primary {
     background-color: whitesmoke;
     border-width: 3px;
     color: red;
     border-bottom: 3px solid red;
 }
 
-.mail-type-container.selected span {
+.mail-type-container.social {
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+
+
+.mail-type-container.promotion {
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: green;
+    border-bottom: 3px solid green;
+}
+
+.c1:hover{
+    background-color: whitesmoke;
+    border-bottom-width: 3px;
+    border-bottom: 3px solid red;
     color: red;
 }
 
-.mail-type-container:hover {
+.c2:hover {
+    background-color: whitesmoke;
+    border-bottom-width: 3px;
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+
+.c3:hover {
     background-color: whitesmoke;
     border-bottom-width: 3px;
     border-bottom: 3px solid green;
+    color: green;
 }
 
 .mail-type-container h4 {
@@ -269,6 +295,7 @@ main {
 
 .mail-row-title {
     font-size: 16px;
+    min-width: 150px;
     flex: 0.3;
 }
 
@@ -276,4 +303,70 @@ main {
     padding-right: 15px;
     font-size: 12px;
     font-weight: bold;
+}
+
+.send-mail-bar {
+    background-color: #202124da;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.send-mail {
+    height: 400px;
+    width: 500px;
+    margin: 40px;
+    /* border: 1px solid gray; */
+    box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.24);
+    display: none;
+    position: relative;
+}
+.send-mail-bar-right span{
+    color: rgb(168, 168, 168);
+    font-size: large;
+}
+
+.send-mail span {
+    cursor: pointer;
+}
+
+.send-mail input {
+    border: none;
+    margin: 0;
+    width: 95%;
+    /* height: 20px; */
+    outline: none;
+    margin: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(209, 206, 206);
+}
+
+.form-send {
+    height: 36px;
+    cursor: pointer;
+    background-color: #297be6;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.form-footer {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-footer-left {
+    display: flex;
+    align-items: center;
 }
